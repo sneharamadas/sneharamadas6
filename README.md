@@ -29,7 +29,7 @@ I thrive in **team-oriented environments**, enjoy taking on **leadership roles**
 ### 🌟 **Projects**
 
 #### **IntelliHealth**
-- Engineered a **health analysis platform** using **AWS**, **JSP**, **OWL ontology**, and **Spring Boot** to deliver **personalized COVID-19** and **cardiovascular disease** insights.
+- Engineered a **health analysis application** using **AWS**, **JSP**, **OWL ontology**, and **Spring Boot** to deliver **personalized COVID-19** and **cardiovascular disease** insights.
 - [IntelliHealth on GitHub](https://github.com/sneharamadas/sneharamadas6/tree/intellihealth)
 
 #### **ScrumPlay**
@@ -37,7 +37,7 @@ I thrive in **team-oriented environments**, enjoy taking on **leadership roles**
 - [ScrumPlay on GitHub](https://github.com/sneharamadas/scrumplay)
   
 #### **Midnight Maneuvers**
-- Midnight Maneuvers is a fast-paced 3D driving game where you navigate a neon-lit city, transport passengers, dodge the cops, and balance risk for bigger payouts, built using Unity, C#, and Playmaker.
+- Midnight Maneuvers is a fast-paced **3D driving game** where you navigate a neon-lit city, transport passengers, dodge the cops, and balance risk for bigger payouts, built using **Unity**, **C#**, and **Playmaker**.
 - [Midnight Maneuvers on Google Drive](https://drive.google.com/file/d/1hVot7QAT8x_zETJr_PcgH1upPf-rbaHE/view?usp=sharing)
 
 #### **MASK IT**
