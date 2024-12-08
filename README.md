@@ -36,12 +36,13 @@ I thrive in **team-oriented environments**, enjoy taking on **leadership roles**
 - Designed a **Scrum simulation tool** using **Spring Boot MVC** and Java Swing to teach Agile methodologies.
 - [ScrumPlay on GitHub](https://github.com/sneharamadas/scrumplay)
   
-#### **MASK IT**
-- Built a **Computer Vision system** using **YOLOv3** to monitor real-time face mask compliance during the COVID-19 pandemic.
-  
 #### **Midnight Maneuvers**
 - Midnight Maneuvers is a fast-paced 3D driving game where you navigate a neon-lit city, transport passengers, dodge the cops, and balance risk for bigger payouts, built using Unity, C#, and Playmaker.
 - [Midnight Maneuvers on Google Drive](https://drive.google.com/file/d/1hVot7QAT8x_zETJr_PcgH1upPf-rbaHE/view?usp=sharing)
+
+#### **MASK IT**
+- Built a **Computer Vision system** using **YOLOv3** to monitor real-time face mask compliance during the COVID-19 pandemic.
+  
 ---
 ### 💼 **Work Experience**
 
