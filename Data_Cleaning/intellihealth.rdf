@@ -1,0 +1,590 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://example.com/ontology/"
+     xml:base="https://example.com/ontology/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://example.com/ontology/"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://example.com/ontology/COPDisIndicatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/COPDisIndicatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/COPD"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Breathlessness"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/ChestPain"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/ChronicCough"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Wheezing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/CVisIndicatedBy -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/CVisIndicatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/Cardiovascular"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Breathlessness"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/ChestPain"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Dizziness"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Palipitation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/SymptomsOf -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/SymptomsOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Symptom"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/covidIsIndicatedby -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/covidIsIndicatedby">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/Covid"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Cold"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Fatigue"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Fever"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Nausea"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/SoreThroat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasBreathlessness -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasBreathlessness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CardiovascularPatient"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CovidPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Breathlessness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasChestPain -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasChestPain">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CardiovascularPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/ChestPain"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasChronicCough -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasChronicCough">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/COPDpatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/ChronicCough"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasCold -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasCold">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CovidPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Cold"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasDizziness -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasDizziness">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CardiovascularPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Dizziness"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasFatigue -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasFatigue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CovidPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Fatigue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasFever -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasFever">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CovidPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Fever"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasNausea -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasNausea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CovidPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Nausea"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasPalpitation -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasPalpitation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CardiovascularPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Palipitation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasSoreThroat -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasSoreThroat">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CovidPatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/SoreThroat"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasWheezing -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/hasWheezing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/COPDpatient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/Wheezing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/infects -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/infects">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://example.com/ontology/#sufferedFrom"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Disease"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/#Patient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/#hasSymptom">
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://example.com/ontology/#sufferedFrom -->
+
+    <owl:ObjectProperty rdf:about="https://example.com/ontology/#sufferedFrom">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="https://example.com/ontology/#Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topDataProperty">
+        <rdfs:domain rdf:resource="https://example.com/ontology/COPDpatient"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CovidPatient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://example.com/ontology/consumesAlcohol -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/consumesAlcohol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/consumesTobacco -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/consumesTobacco">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasAge -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasAge">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasBloodPressure -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasBloodPressure">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasCOPD -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasCOPD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/COPDpatient"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasCholestrol -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasCholestrol">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CardiovascularPatient"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasDiabetes -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasDiabetes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasGender -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasMuscularProblems -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasMuscularProblems">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CardiovascularPatient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasObesity -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasObesity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#CardiovascularPatient"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/hasWeight -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/hasWeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/isSmoker -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/isSmoker">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/#Patient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://example.com/ontology/passesWalkTest -->
+
+    <owl:DatatypeProperty rdf:about="https://example.com/ontology/passesWalkTest">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://example.com/ontology/COPDpatient"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://example.com/ontology/Breathlessness -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Breathlessness">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/COPD -->
+
+    <owl:Class rdf:about="https://example.com/ontology/COPD">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/COPDpatient -->
+
+    <owl:Class rdf:about="https://example.com/ontology/COPDpatient">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Cardiovascular -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Cardiovascular">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/ChestPain -->
+
+    <owl:Class rdf:about="https://example.com/ontology/ChestPain">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/ChronicCough -->
+
+    <owl:Class rdf:about="https://example.com/ontology/ChronicCough">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Cold -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Cold">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Covid -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Covid">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Dizziness -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Dizziness">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Fatigue -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Fatigue">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Fever -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Fever">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Nausea -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Nausea">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Palipitation -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Palipitation">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/SoreThroat -->
+
+    <owl:Class rdf:about="https://example.com/ontology/SoreThroat">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/Wheezing -->
+
+    <owl:Class rdf:about="https://example.com/ontology/Wheezing">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/#CardiovascularPatient -->
+
+    <owl:Class rdf:about="https://example.com/ontology/#CardiovascularPatient">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/#CovidPatient -->
+
+    <owl:Class rdf:about="https://example.com/ontology/#CovidPatient">
+        <rdfs:subClassOf rdf:resource="https://example.com/ontology/#Patient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://example.com/ontology/#Disease -->
+
+    <owl:Class rdf:about="https://example.com/ontology/#Disease"/>
+    
+
+
+    <!-- https://example.com/ontology/#Patient -->
+
+    <owl:Class rdf:about="https://example.com/ontology/#Patient"/>
+    
+
+
+    <!-- https://example.com/ontology/#Symptom -->
+
+    <owl:Class rdf:about="https://example.com/ontology/#Symptom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://example.com/ontology/Breathlessness"/>
+            <rdf:Description rdf:about="https://example.com/ontology/ChestPain"/>
+            <rdf:Description rdf:about="https://example.com/ontology/ChronicCough"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Cold"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Dizziness"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Fatigue"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Fever"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Nausea"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Palipitation"/>
+            <rdf:Description rdf:about="https://example.com/ontology/SoreThroat"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Wheezing"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://example.com/ontology/COPD"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Cardiovascular"/>
+            <rdf:Description rdf:about="https://example.com/ontology/Covid"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://example.com/ontology/COPDpatient"/>
+            <rdf:Description rdf:about="https://example.com/ontology/#CardiovascularPatient"/>
+            <rdf:Description rdf:about="https://example.com/ontology/#CovidPatient"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
