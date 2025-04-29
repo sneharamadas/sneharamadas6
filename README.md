@@ -27,6 +27,10 @@ I thrive in **team-oriented environments**, enjoy taking on **leadership roles**
 
 ---
 ### 🌟 **Projects**
+#### **SkillSync AI**
+- Developed a **full-stack GenAI** application using **MERN stack** that intelligently tailors resumes to job descriptions by leveraging Cohere’s **LLM** for semantic analysis, keyword matching using cosine similarity and content enhancement.
+-	Integrated **MongoDB** Atlas for persistent storage of enhanced resumes, enabling version tracking, metadata tagging, and generation of downloadable files aligned to specific job roles.
+- [SkillSync on GitHub]([https://github.com/sneharamadas/sneharamadas6/tree/SkillSyncAI])
 
 #### **IntelliHealth**
 - Engineered a **health analysis application** using **AWS**, **JSP**, **OWL ontology**, and **Spring Boot** to deliver **personalized COVID-19** and **cardiovascular disease** insights.
